@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35818.85 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnipeHuntUSB.Core", "SnipeHuntUSB.Core\SnipeHuntUSB.Core.vcxproj", "{0A9B8BCF-D87F-4A38-8182-B80C2EBEA665}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnipeHuntUSB.Tray", "SnipeHuntUSB.Tray\SnipeHuntUSB.Tray.vcxproj", "{3F29E563-91B4-413F-AA33-D1361DF3A42C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{0A9B8BCF-D87F-4A38-8182-B80C2EBEA665}.Release|x64.Build.0 = Release|x64
 		{0A9B8BCF-D87F-4A38-8182-B80C2EBEA665}.Release|x86.ActiveCfg = Release|Win32
 		{0A9B8BCF-D87F-4A38-8182-B80C2EBEA665}.Release|x86.Build.0 = Release|Win32
+		{3F29E563-91B4-413F-AA33-D1361DF3A42C}.Debug|x64.ActiveCfg = Debug|x64
+		{3F29E563-91B4-413F-AA33-D1361DF3A42C}.Debug|x64.Build.0 = Debug|x64
+		{3F29E563-91B4-413F-AA33-D1361DF3A42C}.Debug|x86.ActiveCfg = Debug|Win32
+		{3F29E563-91B4-413F-AA33-D1361DF3A42C}.Debug|x86.Build.0 = Debug|Win32
+		{3F29E563-91B4-413F-AA33-D1361DF3A42C}.Release|x64.ActiveCfg = Release|x64
+		{3F29E563-91B4-413F-AA33-D1361DF3A42C}.Release|x64.Build.0 = Release|x64
+		{3F29E563-91B4-413F-AA33-D1361DF3A42C}.Release|x86.ActiveCfg = Release|Win32
+		{3F29E563-91B4-413F-AA33-D1361DF3A42C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
