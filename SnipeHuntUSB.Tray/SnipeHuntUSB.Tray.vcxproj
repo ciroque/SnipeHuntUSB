@@ -130,6 +130,11 @@
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SnipeHuntUSB.Core\SnipeHuntUSB.Core.vcxproj">
+      <Project>{0a9b8bcf-d87f-4a38-8182-b80c2ebea665}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

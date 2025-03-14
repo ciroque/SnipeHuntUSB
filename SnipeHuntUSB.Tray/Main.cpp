@@ -1,5 +1,6 @@
 #include <windows.h>
 #include <shellapi.h>
+#include "../SnipeHuntUSB.Core/Core.h"
 
 #define WM_TRAY (WM_APP + 1)
 
@@ -9,7 +10,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
         GetCursorPos(&pt);
         HMENU hMenu = CreatePopupMenu();
         AppendMenu(hMenu, MF_STRING, 1, L"Exit");
-        SetForegroundWindow(hwnd); // Ensure menu works
+        SetForegroundWindow(hwnd);
         TrackPopupMenu(hMenu, TPM_RIGHTALIGN | TPM_BOTTOMALIGN, pt.x, pt.y, 0, hwnd, NULL);
         DestroyMenu(hMenu);
     }
@@ -37,6 +38,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow) {
     nid.hIcon = LoadIcon(NULL, IDI_APPLICATION);
     wcscpy_s(nid.szTip, L"SnipeHuntUSB");
     Shell_NotifyIcon(NIM_ADD, &nid);
+
+    SayHello(); // Call DLL function
 
     MSG msg;
     while (GetMessage(&msg, NULL, 0, 0)) {
